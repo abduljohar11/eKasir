@@ -1,0 +1,24 @@
+# 1. Folder Vendor & Library (Wajib: Kinerja + Cegah Merusak Library)
+/vendor/
+/node_modules/
+
+# 2. Asset Kompilasi & Build (Wajib: Cegah Merusak JS/CSS Minified)
+/public/build/
+/public/fonts-manifest.dev.json
+/public/hot/
+/public/storage/
+/bootstrap/ssr/
+
+# 3. Cache, Log & Kunci Enkripsi (Wajib: Cegah Error Parsing/Authentication)
+/.phpunit.cache
+.phpunit.result.cache
+/storage/*.key
+/storage/pail/
+/storage/framework/
+/storage/logs/
+*.log
+
+# 4. File Environment & Kunci Sensitif (Wajib: Cegah Error Laravel)
+.env
+.env.*
+/auth.json
