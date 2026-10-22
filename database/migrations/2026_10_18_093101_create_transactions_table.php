@@ -19,7 +19,7 @@ return new class extends Migration {
             $table->unsignedBigInteger('discount_amount')->default(0); // Nominal potongan diskon nota
             $table->unsignedBigInteger('grand_total')->default(0); // Total bersih tagihan yang wajib dibayar
             $table->unsignedBigInteger('pay_amount')->default(0); // Uang yang diserahkan/dibayarkan pelanggan
-            $table->unsignedBigInteger('change_amount')->default(0); // Uang kembalian (pay_amount - grand_total)$table->string('payment_method'); //Metode bayar: cash, qris, atau debit.
+            $table->unsignedBigInteger('change_amount')->default(0); // Uang kembalian (pay_amount - grand_total)
             $table->string('payment_method', 30)->default(PaymenMethod::default()->value); // Metode bayar: cash, qris, debit, dll.
             $table->timestamps();
         });

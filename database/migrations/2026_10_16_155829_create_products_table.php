@@ -21,7 +21,7 @@ return new class extends Migration {
             $table->unsignedBigInteger('sell_price')->default(0); // Harga jual
             $table->unsignedInteger('stock')->default(0); // Jumlah stok
             $table->unsignedInteger('min_stock')->default(0); // Batas minimum stok untuk peringatann (warning).
-            $table->boolean('is_active')->default(true);
+            $table->string('satuan', 20)->default('pcs'); //pcs/gr/kg dll
             $table->timestamps();
         });
     }
